@@ -43,8 +43,6 @@ class Server:
         assert isinstance(page_size, int) and page_size > 0
         index = index_range(page, page_size)
         rows = self.dataset()
-        if index[0] > len(rows):
-            return []
-        elif index[1] >= len(rows):
-            return rows[index[0]:]
-        return rows[index[0]:index[1]]
+        if index[0] < len(rows) and index[1] <= len(rows):
+            return rows[index[0]:index[1]]
+        return []
