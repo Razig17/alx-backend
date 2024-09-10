@@ -2,7 +2,6 @@
 """Basic Babel app"""
 
 from flask import Flask, render_template, request
-from flask_babel import Babel, gettext as _
 from typing import Union
 
 
@@ -27,5 +26,4 @@ def get_locale() -> Union[str, None]:
 @app.route('/')
 def home() -> str:
     """Home page"""
-    return render_template('3-index.html', home_title=_("home_title"),
-                           home_header=_("home_header"))
+    return render_template('3-index.html')
