@@ -31,5 +31,3 @@ def get_locale() -> Union[str, None]:
 def home() -> str:
     """Home page"""
     return render_template('4-index.html')
-if __name__ == '__main__':
-    app.run()
