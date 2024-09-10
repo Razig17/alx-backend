@@ -9,7 +9,7 @@ from typing import Union
 class Config:
     """Config for Babel"""
     LANGUAGES = ["en", "fr"]
-    BABEL_DEFAULT_LOCALE = "en"
+    BABEL_DEFAULT_LOCALE = "fr"
     BABEL_DEFAULT_TIMEZONE = "UTC"
 
 
@@ -27,5 +27,5 @@ def get_locale() -> Union[str, None]:
 @app.route('/')
 def home() -> str:
     """Home page"""
-    return render_template('2-index.html', home_title=_("home_title"),
+    return render_template('3-index.html', home_title=_("home_title"),
                            home_header=_("home_header"))

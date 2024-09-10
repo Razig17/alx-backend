@@ -20,9 +20,9 @@ msgstr ""
 
 #: 3-app.py:30
 msgid "home_title"
-msgstr ""
+msgstr "Welcome to Holberton"
 
 #: 3-app.py:30
 msgid "home_header"
-msgstr ""
+msgstr "Hello world!"
 
