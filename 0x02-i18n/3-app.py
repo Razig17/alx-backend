@@ -9,7 +9,7 @@ from typing import Union
 class Config:
     """Config for Babel"""
     LANGUAGES = ["en", "fr"]
-    BABEL_DEFAULT_LOCALE = "fr"
+    BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
 
 
