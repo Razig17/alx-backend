@@ -53,4 +53,4 @@ def get_locale() -> Union[str, None]:
 @app.route('/')
 def home() -> str:
     """Home page"""
-    return render_template('5-index.html', user=g.user)
+    return render_template('6-index.html', user=g.user)
